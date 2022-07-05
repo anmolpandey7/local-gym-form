@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmol fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        /* css reset */
+        body{
+            font-family: 'Baloo Bhai 2', cursive;
+            color: aliceblue;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/workout.jpg');
+        }
+        .left{
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 5px;
+            top: 22px;
+        }
+        .left div{
+            text-align: center;
+            line-height: 0px;
+        }
+        .left img{
+            width: 79px;
+            filter: invert(100%);
+        }
+        .mid{
+            position: relative;
+            right: 63px;
+            /* border: 2px solid green; */
+            margin: 22px auto;
+            display: block;
+            width: 53%;
+        }
+        .right{
+            position: absolute;
+            right: 3px;
+            top: 35px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+        .btn{
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px white;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(61, 49, 49);
+        }
+        .navbar{
+            display: inline-block;
+        }
+
+        .navbar li{
+            display: inline-block;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover , .navbar li a:active{
+            text-decoration: underline;
+            color: grey;
+        }
+        .container{
+            color: brown;
+            border: 1px solid white;
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+        }
+        .formgroup input{
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+            display: block;
+            width: 394px;
+            margin: 5px auto;
+            padding: 0px;
+            font-size: 16px;
+            border-radius: 23px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 400px;
+            margin: 23px auto;
+            border: 2px solid white
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/lg.png" alt="">
+            <div>Anmol fitness</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for search -->
+        <div class="right">
+            <button class="btn">call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym in silvassa now</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Gender ">
+            </div>
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Email id">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your phone number">
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
